@@ -41,12 +41,12 @@
           <% end %>
         <% end %>
         <ul class="comments_lists">
-            <li class="comments_list">
-              <% @comments.each do |comment| %>
-                <%= comment.content %>
-                <%= link_to comment.user.name, user_path(comment.user_id), class: :comment_user %>
-              <% end %>
-            </li>
+          <li class="comments_list">
+            <% @comments.each do |comment| %>
+              <%= comment.content %>
+              <%= link_to comment.user.name, user_path(comment.user_id), class: :comment_user %>
+            <% end %>
+          </li>
         </ul>
       </div>
     </div>
